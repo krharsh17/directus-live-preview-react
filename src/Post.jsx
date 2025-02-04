@@ -22,7 +22,7 @@ const Post = () => {
     let result
 
     const version = query.get("version")
-    const getPost = (id) => readItem('Posts', id, {version})
+    const getPost = (id) => readItem('posts', id, {version})
 
     try {
       if (isPreview && token)
